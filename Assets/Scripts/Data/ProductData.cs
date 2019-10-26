@@ -10,5 +10,14 @@ namespace Data
         public int amount;
         public int price;
         public int costs;
+
+        public ProductData(string identification, string name, int amount, int price, int costs)
+        {
+            this.identification = identification;
+            this.name = name;
+            this.amount = amount;
+            this.price = price;
+            this.costs = costs;
+        }
     }
 }

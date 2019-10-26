@@ -10,5 +10,14 @@ namespace Data
         public int amount;
         public int price;
         public DateTime date;
+
+        public SaleData(string userNickname, string productIdentification, int amount, int price, DateTime date)
+        {
+            this.userNickname = userNickname;
+            this.productIdentification = productIdentification;
+            this.amount = amount;
+            this.price = price;
+            this.date = date;
+        }
     }
 }

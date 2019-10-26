@@ -16,9 +16,9 @@ MonoBehaviour:
   productsData:
   - identification: 1457
     name: Qwerty
-    amount: 5
-    price: 25
-    costs: 15
+    amount: 7
+    price: 30
+    costs: 25
   - identification: 4894
     name: Kdsfewr wre ewre
     amount: 15
@@ -26,9 +26,9 @@ MonoBehaviour:
     costs: 58
   - identification: 1897
     name: 'Pewr wer sdf '
-    amount: 12
-    price: 8
-    costs: 6
+    amount: 17
+    price: 10
+    costs: 16
   - identification: 1897
     name: 'Pewr wer sdf '
     amount: 12
@@ -89,7 +89,16 @@ MonoBehaviour:
     amount: 12
     price: 8
     costs: 6
-  salesData: []
+  - identification: 3333
+    name: 
+    amount: 5
+    price: 10
+    costs: 10
+  salesData:
+  - userNickname: 
+    productIdentification: 
+    amount: 0
+    price: 0
   purchasesData:
   - productIdentification: 
     amount: 0
