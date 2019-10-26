@@ -1,4 +1,5 @@
-﻿using MainMenu;
+﻿using Data;
+using MainMenu;
 using SceneManagement;
 
 namespace Application
@@ -9,11 +10,14 @@ namespace Application
         public static ApplicationManager Instance { get; private set; }
         
         public MainMenuManager MainMenuManager { get; private set; }
-
-        public ApplicationManager()
+        
+        public DataHolder DataHolder{ get; private set; }
+        
+        public ApplicationManager(DataHolder dataHolder)
         {
             Instance = this;
             IsInitialized = true;
+            this.DataHolder = dataHolder;
         }
 
         public override void Start()

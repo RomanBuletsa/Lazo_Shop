@@ -12,7 +12,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 892a48406fa7a2a4498edeaf3a44908a, type: 3}
   m_Name: DataHolder
   m_EditorClassIdentifier: 
-  usersData: []
+  usersData:
+  - nickname: Master
+    email: qwqw
+    phoneNumber: 334
+    city: Uz
+    spent: 10
+  - nickname: Ygd
+    email: sds
+    phoneNumber: sdsds
+    city: sds
+    spent: 5
+  - nickname: rrmas
+    email: rrr
+    phoneNumber: rr
+    city: rr
+    spent: 500
+  - nickname: pidor
+    email: 
+    phoneNumber: 
+    city: 
+    spent: 0
   productsData: []
   salesData: []
   purchasesData: []

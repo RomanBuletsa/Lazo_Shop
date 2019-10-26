@@ -7,10 +7,9 @@ namespace MainMenu
 {
     public sealed class MainMenuInitializer : BaseInitializer
     {
-        [SerializeField] private DataHolder dataHolder;
         protected override void Init()
         {
-            var manager = new MainMenuManager(dataHolder);
+            var manager = new MainMenuManager();
             ApplicationManager.Instance.RegisterMainMenuManager(manager);
         }
 
