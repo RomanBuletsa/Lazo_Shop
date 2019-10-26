@@ -10,6 +10,7 @@ namespace Data
         public int amount;
         public int price;
         public int costs;
+        public int profit;
 
         public ProductData(string identification, string name, int amount, int price, int costs)
         {

@@ -13,6 +13,7 @@ namespace AdminPage
         [SerializeField] private Transform productsParent;
         [SerializeField] private ProductView productViewPrefab;
         [SerializeField] private AddProductView addProductView;
+        [SerializeField] private SellProductView sellProductView;
         [SerializeField] private TMP_InputField searchText;
         [SerializeField] private Button searchButton;
         [SerializeField] private Button addProductsButton;
@@ -28,6 +29,7 @@ namespace AdminPage
             productViews = new Dictionary<ProductData, ProductView>();
             searchButton.onClick.AddListener(Search);
             addProductsButton.onClick.AddListener(addProductView.Show);
+            sellProductsButton.onClick.AddListener(sellProductView.Show);
             ViewProducts();
         }
         
@@ -37,16 +39,10 @@ namespace AdminPage
                 {
                     var view = Instantiate(productViewPrefab, productsParent);
                     productViews.Add(product, view);
-                    view.ProductSelected += OnProductSelect;
                     view.Show(product);
                     view.gameObject.SetActive(true);
                 }
                 );
-        }
-
-        private void OnProductSelect(ProductData products)
-        {
-            
         }
 
         private void Search()

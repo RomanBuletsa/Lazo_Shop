@@ -3689,7 +3689,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.5019608}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.78431374}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -5475,7 +5475,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.5019608}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.78431374}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -7794,6 +7794,7 @@ MonoBehaviour:
   productsParent: {fileID: 1076500006}
   productViewPrefab: {fileID: 2069400676}
   addProductView: {fileID: 1578223978}
+  sellProductView: {fileID: 1784340920}
   searchText: {fileID: 1379612592}
   searchButton: {fileID: 2040175037}
   addProductsButton: {fileID: 1839338099}
@@ -8814,7 +8815,6 @@ GameObject:
   - component: {fileID: 1750999940}
   - component: {fileID: 1750999939}
   - component: {fileID: 1750999938}
-  - component: {fileID: 1750999941}
   m_Layer: 5
   m_Name: SellButton
   m_TagString: Untagged
@@ -8924,23 +8924,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1750999936}
   m_CullTransparentMesh: 0
---- !u!114 &1750999941
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1750999936}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5659b48fd18017140a2ff953f6cddf20, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  idInputField: {fileID: 0}
-  amountInputField: {fileID: 0}
-  nicknameInputField: {fileID: 0}
-  okButton: {fileID: 0}
-  cancelButton: {fileID: 0}
 --- !u!1 &1756174600
 GameObject:
   m_ObjectHideFlags: 0
@@ -9240,7 +9223,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1784340919
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9275,14 +9258,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1784340918}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06b1025e5ebb56c43b986b22ec06b1ca, type: 3}
+  m_Script: {fileID: 11500000, guid: 5659b48fd18017140a2ff953f6cddf20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   idInputField: {fileID: 2021764259}
   amountInputField: {fileID: 1198192670}
-  costInputField: {fileID: 0}
-  priceInputField: {fileID: 0}
-  nameInputField: {fileID: 495628126}
+  nicknameInputField: {fileID: 495628126}
   okButton: {fileID: 1458107816}
   cancelButton: {fileID: 810550191}
 --- !u!1 &1816686670
@@ -10733,7 +10714,6 @@ MonoBehaviour:
   nameText: {fileID: 1756174602}
   amountText: {fileID: 1433493939}
   priceText: {fileID: 72288397}
-  button: {fileID: 1512068565}
 --- !u!1 &2088611572
 GameObject:
   m_ObjectHideFlags: 0
