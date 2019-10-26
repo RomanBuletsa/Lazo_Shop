@@ -4,5 +4,6 @@
     {
         ApplicationInitializer = 0,
         MainMenu = 1,
+        AdminPage = 2,
     }
 }

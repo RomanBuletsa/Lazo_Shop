@@ -1,4 +1,6 @@
-﻿using MainMenu;
+﻿using AdminPage;
+using Data;
+using MainMenu;
 using SceneManagement;
 
 namespace Application
@@ -10,10 +12,15 @@ namespace Application
         
         public MainMenuManager MainMenuManager { get; private set; }
 
-        public ApplicationManager()
+        public AdminPageManager AdminPageManager { get; set; }
+
+        public DataHolder DataHolder { get; private set; }
+
+        public ApplicationManager(DataHolder dataHolder)
         {
             Instance = this;
             IsInitialized = true;
+            DataHolder = dataHolder;
         }
 
         public override void Start()

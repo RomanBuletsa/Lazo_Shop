@@ -13,6 +13,84 @@ MonoBehaviour:
   m_Name: DataHolder
   m_EditorClassIdentifier: 
   usersData: []
-  productsData: []
+  productsData:
+  - identification: 1457
+    name: Qwerty
+    amount: 5
+    price: 25
+    costs: 15
+  - identification: 4894
+    name: Kdsfewr wre ewre
+    amount: 15
+    price: 98
+    costs: 58
+  - identification: 1897
+    name: 'Pewr wer sdf '
+    amount: 12
+    price: 8
+    costs: 6
+  - identification: 1897
+    name: 'Pewr wer sdf '
+    amount: 12
+    price: 8
+    costs: 6
+  - identification: 1897
+    name: 'Pewr wer sdf '
+    amount: 12
+    price: 8
+    costs: 6
+  - identification: 1897
+    name: 'Pewr wer sdf '
+    amount: 12
+    price: 8
+    costs: 6
+  - identification: 1897
+    name: 'Pewr wer sdf '
+    amount: 12
+    price: 8
+    costs: 6
+  - identification: 1897
+    name: 'Pewr wer sdf '
+    amount: 12
+    price: 8
+    costs: 6
+  - identification: 1897
+    name: 'Pewr wer sdf '
+    amount: 12
+    price: 8
+    costs: 6
+  - identification: 1897
+    name: 'Pewr wer sdf '
+    amount: 12
+    price: 8
+    costs: 6
+  - identification: 1897
+    name: 'Pewr wer sdf '
+    amount: 12
+    price: 8
+    costs: 6
+  - identification: 1897
+    name: 'Pewr wer sdf '
+    amount: 12
+    price: 8
+    costs: 6
+  - identification: 1897
+    name: 'Pewr wer sdf '
+    amount: 12
+    price: 8
+    costs: 6
+  - identification: 1897
+    name: 'Pewr wer sdf '
+    amount: 12
+    price: 8
+    costs: 6
+  - identification: 1897
+    name: 'Pewr wer sdf '
+    amount: 12
+    price: 8
+    costs: 6
   salesData: []
-  purchasesData: []
+  purchasesData:
+  - productIdentification: 
+    amount: 0
+    price: 0
