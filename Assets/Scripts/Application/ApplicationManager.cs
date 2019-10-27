@@ -1,4 +1,4 @@
-﻿using AdminPage;
+using AdminPage;
 using Data;
 using MainMenu;
 using SceneManagement;
