@@ -2,12 +2,12 @@ using AdminPage;
 using Data;
 using MainMenu;
 using SceneManagement;
+using UnityEngine.SceneManagement;
 
 namespace Application
 {
     public sealed class ApplicationManager : BaseApplicationManager
     {
-    
         public static ApplicationManager Instance { get; private set; }
         
         public MainMenuManager MainMenuManager { get; private set; }

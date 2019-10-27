@@ -35,14 +35,21 @@ namespace AdminPage
         
         private void ViewProducts()
         {
-            ApplicationManager.Instance.DataHolder.GetProductsData().ForEach(product =>
-                {
-                    var view = Instantiate(productViewPrefab, productsParent);
-                    productViews.Add(product, view);
-                    view.Show(product);
-                    view.gameObject.SetActive(true);
-                }
-                );
+            ApplicationManager.Instance.DataHolder.GetProductsData().ForEach(AddProduct);
+        }
+
+        public void AddProduct(ProductData product)
+        {
+            var view = Instantiate(productViewPrefab, productsParent);
+            productViews.Add(product, view);
+            view.Show(product);
+            view.gameObject.SetActive(true);
+        }
+
+        public void UpdateData(ProductData oldProductData, ProductData newProductData)
+        {
+            var productView = productViews[oldProductData];
+            productView.Show(newProductData);
         }
 
         private void Search()

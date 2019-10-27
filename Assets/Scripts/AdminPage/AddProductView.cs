@@ -28,11 +28,16 @@ namespace AdminPage
         {
             var products = ApplicationManager.Instance.DataHolder.GetProductsData().Where((s) => s.identification == idInputField.text);
             var product = products.FirstOrDefault();
+            var oldProductData = product;
             if (product != null)
             {
                 product.amount += Convert.ToInt32(amountInputField.text);
-                product.price = Convert.ToInt32(priceInputField.text);
-                product.costs += Convert.ToInt32(costInputField.text) * Convert.ToInt32(amountInputField.text);
+                if(priceInputField.text.Length > 0)
+                    product.price = Convert.ToInt32(priceInputField.text);
+                if(costInputField.text.Length > 0)
+                    product.costs += Convert.ToInt32(costInputField.text) * Convert.ToInt32(amountInputField.text);
+                
+                ApplicationManager.Instance.AdminPageManager.UpdateData(oldProductData, product);
             }
             else
             {
@@ -40,6 +45,8 @@ namespace AdminPage
                     Convert.ToInt32(amountInputField.text), Convert.ToInt32(priceInputField.text),
                     Convert.ToInt32(costInputField.text) * Convert.ToInt32(amountInputField.text));
                 ApplicationManager.Instance.DataHolder.GetProductsData().Add(productData);
+                
+                ApplicationManager.Instance.AdminPageManager.AddProduct(productData);
             }
             
             Hide();

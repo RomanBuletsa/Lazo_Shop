@@ -26,6 +26,7 @@ public class SellProductView : MonoBehaviour
     {
         var products = ApplicationManager.Instance.DataHolder.GetProductsData().Where((s) => s.identification == idInputField.text);
         var product = products.FirstOrDefault();
+        var oldProductData = product;
         if (product == null || product.amount < Convert.ToInt32(amountInputField.text)) return;
         var saleData = new SaleData(nicknameInputField.text, idInputField.text,
             Convert.ToInt32(amountInputField.text), product.price, DateTime.Now);
@@ -33,6 +34,8 @@ public class SellProductView : MonoBehaviour
 
         product.amount -= Convert.ToInt32(amountInputField.text);
         product.profit += Convert.ToInt32(amountInputField.text) * product.price;
+        
+        ApplicationManager.Instance.AdminPageManager.UpdateData(oldProductData, product);
         
         Hide();
     }

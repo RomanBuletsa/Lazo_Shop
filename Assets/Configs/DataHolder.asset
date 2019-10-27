@@ -12,88 +12,114 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 892a48406fa7a2a4498edeaf3a44908a, type: 3}
   m_Name: DataHolder
   m_EditorClassIdentifier: 
-  usersData: []
+  usersData:
+  - nickname: Gdrg
+    email: gd@gmail.com
+    phoneNumber: 1564
+    city: Fewr
+    spent: 0
+  - nickname: Htr
+    email: hztr
+    phoneNumber: 1564
+    city: GRrtrt
+    spent: 0
   productsData:
   - identification: 1457
     name: Qwerty
     amount: 7
     price: 30
     costs: 25
+    profit: 0
   - identification: 4894
     name: Kdsfewr wre ewre
     amount: 15
     price: 98
     costs: 58
+    profit: 0
   - identification: 1897
     name: 'Pewr wer sdf '
     amount: 17
     price: 10
     costs: 16
+    profit: 0
   - identification: 1897
     name: 'Pewr wer sdf '
     amount: 12
     price: 8
     costs: 6
+    profit: 0
   - identification: 1897
     name: 'Pewr wer sdf '
     amount: 12
     price: 8
     costs: 6
+    profit: 0
   - identification: 1897
     name: 'Pewr wer sdf '
     amount: 12
     price: 8
     costs: 6
+    profit: 0
   - identification: 1897
     name: 'Pewr wer sdf '
     amount: 12
     price: 8
     costs: 6
+    profit: 0
   - identification: 1897
     name: 'Pewr wer sdf '
     amount: 12
     price: 8
     costs: 6
+    profit: 0
   - identification: 1897
     name: 'Pewr wer sdf '
     amount: 12
     price: 8
     costs: 6
+    profit: 0
   - identification: 1897
     name: 'Pewr wer sdf '
     amount: 12
     price: 8
     costs: 6
+    profit: 0
   - identification: 1897
     name: 'Pewr wer sdf '
     amount: 12
     price: 8
     costs: 6
+    profit: 0
   - identification: 1897
     name: 'Pewr wer sdf '
     amount: 12
     price: 8
     costs: 6
+    profit: 0
   - identification: 1897
     name: 'Pewr wer sdf '
     amount: 12
     price: 8
     costs: 6
+    profit: 0
   - identification: 1897
     name: 'Pewr wer sdf '
     amount: 12
     price: 8
     costs: 6
+    profit: 0
   - identification: 1897
     name: 'Pewr wer sdf '
     amount: 12
     price: 8
     costs: 6
+    profit: 0
   - identification: 3333
     name: 
     amount: 5
     price: 10
     costs: 10
+    profit: 0
   salesData:
   - userNickname: 
     productIdentification: 
