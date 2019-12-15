@@ -30,112 +30,112 @@ MonoBehaviour:
     price: 30
     costs: 25
     profit: 60
-    model: {fileID: 1191933010613832, guid: 42db2464346d91c47b812288879592f1, type: 3}
+    modelName: 
   - identification: 4894
     name: Kdsfewr wre ewre
     amount: 15
     price: 98
     costs: 58
     profit: 0
-    model: {fileID: 0}
+    modelName: 
   - identification: 1897
     name: 'Pewr wer sdf '
     amount: 17
     price: 10
     costs: 16
     profit: 0
-    model: {fileID: 0}
+    modelName: 
   - identification: 1897
     name: 'Pewr wer sdf '
     amount: 12
     price: 8
     costs: 6
     profit: 0
-    model: {fileID: 0}
+    modelName: 
   - identification: 1897
     name: 'Pewr wer sdf '
     amount: 12
     price: 8
     costs: 6
     profit: 0
-    model: {fileID: 0}
+    modelName: 
   - identification: 1897
     name: 'Pewr wer sdf '
     amount: 12
     price: 8
     costs: 6
     profit: 0
-    model: {fileID: 0}
+    modelName: 
   - identification: 1897
     name: 'Pewr wer sdf '
     amount: 12
     price: 8
     costs: 6
     profit: 0
-    model: {fileID: 0}
+    modelName: 
   - identification: 1897
     name: 'Pewr wer sdf '
     amount: 12
     price: 8
     costs: 6
     profit: 0
-    model: {fileID: 0}
+    modelName: 
   - identification: 1897
     name: 'Pewr wer sdf '
     amount: 12
     price: 8
     costs: 6
     profit: 0
-    model: {fileID: 0}
+    modelName: 
   - identification: 1897
     name: 'Pewr wer sdf '
     amount: 12
     price: 8
     costs: 6
     profit: 0
-    model: {fileID: 0}
+    modelName: 
   - identification: 1897
     name: 'Pewr wer sdf '
     amount: 12
     price: 8
     costs: 6
     profit: 0
-    model: {fileID: 0}
+    modelName: 
   - identification: 1897
     name: 'Pewr wer sdf '
     amount: 12
     price: 8
     costs: 6
     profit: 0
-    model: {fileID: 0}
+    modelName: 
   - identification: 1897
     name: 'Pewr wer sdf '
     amount: 12
     price: 8
     costs: 6
     profit: 0
-    model: {fileID: 0}
+    modelName: 
   - identification: 1897
     name: 'Pewr wer sdf '
     amount: 12
     price: 8
     costs: 6
     profit: 0
-    model: {fileID: 0}
+    modelName: 
   - identification: 1897
     name: 'Pewr wer sdf '
     amount: 12
     price: 8
     costs: 6
     profit: 0
-    model: {fileID: 0}
+    modelName: 
   - identification: 3333
     name: 
     amount: 5
     price: 10
     costs: 10
     profit: 0
-    model: {fileID: 0}
+    modelName: 
   salesData:
   - userNickname: 
     productIdentification: 
@@ -149,3 +149,6 @@ MonoBehaviour:
   - productIdentification: 
     amount: 0
     price: 0
+  models:
+  - name: 1
+    model: {fileID: 1191933010613832, guid: 42db2464346d91c47b812288879592f1, type: 3}

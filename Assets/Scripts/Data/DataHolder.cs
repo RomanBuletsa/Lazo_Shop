@@ -10,10 +10,12 @@ namespace Data
         [SerializeField] private List<ProductData> productsData;
         [SerializeField] private List<SaleData> salesData;
         [SerializeField] private List<PurchaseData> purchasesData;
+        [SerializeField] private List<Model> models;
     
         public List<UserData> GetUsersData() => usersData;
         public List<ProductData> GetProductsData() => productsData;
         public List<SaleData> GetSalesData() => salesData;
         public List<PurchaseData> GetPurchasesData() => purchasesData;
+        public List<Model> Models => models;
     }
 }

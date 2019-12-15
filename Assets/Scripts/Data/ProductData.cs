@@ -12,15 +12,16 @@ namespace Data
         public int price;
         public int costs;
         public int profit;
-        public GameObject model;
+        public string modelName;
 
-        public ProductData(string identification, string name, int amount, int price, int costs)
+        public ProductData(string identification, string name, int amount, int price, int costs, string modelName)
         {
             this.identification = identification;
             this.name = name;
             this.amount = amount;
             this.price = price;
             this.costs = costs;
+            this.modelName = modelName;
         }
     }
 }

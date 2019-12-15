@@ -10,7 +10,8 @@ namespace Exhibition
         [SerializeField] private Transform modelPointTransform;
         private GameObject productModel;
         private Vector3 eulerLookRotation;
-        private float rotationSpeed = 1f;
+        private float rotationSpeed = 2f;
+        private bool clickButton;
 
         private void Awake() => ApplicationManager.Instance.ExhibitionManager = this;
 
@@ -29,11 +30,18 @@ namespace Exhibition
                 ScenesLoader.UnloadScene(ApplicationScenes.Exhibition.ToString());
                 ScenesLoader.LoadScene(ApplicationScenes.AdminPage.ToString(), true, false);
             }
-            
-            
-            eulerLookRotation.y += Input.GetAxisRaw("Mouse X") * rotationSpeed;
-            eulerLookRotation.x += Input.GetAxisRaw("Mouse Y") * rotationSpeed;
-            productModel.transform.rotation = Quaternion.Euler(eulerLookRotation);
+
+            if (Input.GetMouseButtonDown(0))
+                clickButton = true;
+            if (Input.GetMouseButtonUp(0))
+                clickButton = false;
+
+            if (clickButton)
+            {
+                eulerLookRotation.y += Input.GetAxisRaw("Mouse X") * rotationSpeed;
+                eulerLookRotation.x += Input.GetAxisRaw("Mouse Y") * rotationSpeed;
+                productModel.transform.rotation = Quaternion.Euler(eulerLookRotation);
+            }
         }
     }
 }

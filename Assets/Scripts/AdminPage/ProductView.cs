@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Linq;
+using Application;
 using Data;
 using TMPro;
 using UnityEngine;
@@ -14,6 +16,7 @@ namespace AdminPage
         [SerializeField] private TMP_Text priceText;
         [SerializeField] private Button showProductModelButton;
         public event Action<GameObject> ProductModelButtonClicked;
+        private GameObject productModel;
 
         public void Show(ProductData product)
         {
@@ -21,8 +24,9 @@ namespace AdminPage
             nameText.text = product.name;
             amountText.text = product.amount.ToString();
             priceText.text = product.price.ToString();
-            if(product.model != null)
-                showProductModelButton.onClick.AddListener(() => ProductModelButtonClicked?.Invoke(product.model));
+            productModel = ApplicationManager.Instance.DataHolder.Models.FirstOrDefault(s => s.name.ToString() == product.modelName)?.model;
+            if (productModel != null)
+                showProductModelButton.onClick.AddListener(() => ProductModelButtonClicked?.Invoke(productModel));
         }
     }
 }
