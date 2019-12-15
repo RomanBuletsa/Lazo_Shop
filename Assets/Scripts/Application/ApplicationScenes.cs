@@ -6,6 +6,7 @@
         MainMenu = 1,
         AdminPage = 2,
         UsersPage = 3,
-        Exhibition = 4,
+        StatisticsPage = 4,
+        Exhibition = 5,
     }
 }

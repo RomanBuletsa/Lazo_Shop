@@ -11,6 +11,7 @@ namespace MainMenu
         {
             ScenesLoader.LoadScene(ApplicationScenes.AdminPage.ToString(), true, false);
             //ScenesLoader.LoadScene(ApplicationScenes.UsersPage.ToString(), true, false);
+            //ScenesLoader.LoadScene(ApplicationScenes.StatisticsPage.ToString(), true, false);
             ScenesLoader.UnloadScene(ApplicationScenes.MainMenu.ToString());
         }
 

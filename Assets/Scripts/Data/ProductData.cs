@@ -23,5 +23,7 @@ namespace Data
             this.costs = costs;
             this.modelName = modelName;
         }
+
+        public int Profit => price - costs;
     }
 }
