@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Application;
 using Data;
+using SceneManagement;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -20,7 +21,9 @@ namespace AdminPage
         [SerializeField] private Button sellProductsButton;
 
         private Dictionary<ProductData, ProductView> productViews;
-        
+
+        public GameObject ProductModel { get; private set; }
+
         private void Awake() => ApplicationManager.Instance.AdminPageManager = this;
         private void OnDestroy() => ApplicationManager.Instance.AdminPageManager = null;
 
@@ -44,6 +47,13 @@ namespace AdminPage
             productViews.Add(product, view);
             view.Show(product);
             view.gameObject.SetActive(true);
+            view.ProductModelButtonClicked += ShowProductModel;
+        }
+
+        private void ShowProductModel(GameObject productModel)
+        {
+            ProductModel = productModel;
+            ScenesLoader.LoadScene(ApplicationScenes.Exhibition.ToString(), true, false);
         }
 
         public void UpdateData(ProductData oldProductData, ProductData newProductData)

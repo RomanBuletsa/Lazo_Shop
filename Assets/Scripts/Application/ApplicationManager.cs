@@ -1,5 +1,6 @@
 using AdminPage;
 using Data;
+using Exhibition;
 using MainMenu;
 using SceneManagement;
 using UnityEngine.SceneManagement;
@@ -13,6 +14,7 @@ namespace Application
         public MainMenuManager MainMenuManager { get; private set; }
 
         public AdminPageManager AdminPageManager { get; set; }
+        public ExhibitionManager ExhibitionManager { get; set; }
 
         public DataHolder DataHolder { get; private set; }
 

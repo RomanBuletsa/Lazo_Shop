@@ -13,118 +13,138 @@ MonoBehaviour:
   m_Name: DataHolder
   m_EditorClassIdentifier: 
   usersData:
+  - nickname: Htr
+    email: hztr
+    phoneNumber: 1564
+    city: GRrtrt
+    spent: 30
   - nickname: Gdrg
     email: gd@gmail.com
     phoneNumber: 1564
     city: Fewr
     spent: 0
-  - nickname: Htr
-    email: hztr
-    phoneNumber: 1564
-    city: GRrtrt
-    spent: 0
   productsData:
   - identification: 1457
     name: Qwerty
-    amount: 7
+    amount: 5
     price: 30
     costs: 25
-    profit: 0
+    profit: 60
+    model: {fileID: 1191933010613832, guid: 42db2464346d91c47b812288879592f1, type: 3}
   - identification: 4894
     name: Kdsfewr wre ewre
     amount: 15
     price: 98
     costs: 58
     profit: 0
+    model: {fileID: 0}
   - identification: 1897
     name: 'Pewr wer sdf '
     amount: 17
     price: 10
     costs: 16
     profit: 0
+    model: {fileID: 0}
   - identification: 1897
     name: 'Pewr wer sdf '
     amount: 12
     price: 8
     costs: 6
     profit: 0
+    model: {fileID: 0}
   - identification: 1897
     name: 'Pewr wer sdf '
     amount: 12
     price: 8
     costs: 6
     profit: 0
+    model: {fileID: 0}
   - identification: 1897
     name: 'Pewr wer sdf '
     amount: 12
     price: 8
     costs: 6
     profit: 0
+    model: {fileID: 0}
   - identification: 1897
     name: 'Pewr wer sdf '
     amount: 12
     price: 8
     costs: 6
     profit: 0
+    model: {fileID: 0}
   - identification: 1897
     name: 'Pewr wer sdf '
     amount: 12
     price: 8
     costs: 6
     profit: 0
+    model: {fileID: 0}
   - identification: 1897
     name: 'Pewr wer sdf '
     amount: 12
     price: 8
     costs: 6
     profit: 0
+    model: {fileID: 0}
   - identification: 1897
     name: 'Pewr wer sdf '
     amount: 12
     price: 8
     costs: 6
     profit: 0
+    model: {fileID: 0}
   - identification: 1897
     name: 'Pewr wer sdf '
     amount: 12
     price: 8
     costs: 6
     profit: 0
+    model: {fileID: 0}
   - identification: 1897
     name: 'Pewr wer sdf '
     amount: 12
     price: 8
     costs: 6
     profit: 0
+    model: {fileID: 0}
   - identification: 1897
     name: 'Pewr wer sdf '
     amount: 12
     price: 8
     costs: 6
     profit: 0
+    model: {fileID: 0}
   - identification: 1897
     name: 'Pewr wer sdf '
     amount: 12
     price: 8
     costs: 6
     profit: 0
+    model: {fileID: 0}
   - identification: 1897
     name: 'Pewr wer sdf '
     amount: 12
     price: 8
     costs: 6
     profit: 0
+    model: {fileID: 0}
   - identification: 3333
     name: 
     amount: 5
     price: 10
     costs: 10
     profit: 0
+    model: {fileID: 0}
   salesData:
   - userNickname: 
     productIdentification: 
     amount: 0
     price: 0
+  - userNickname: Htr
+    productIdentification: 1457
+    amount: 1
+    price: 30
   purchasesData:
   - productIdentification: 
     amount: 0

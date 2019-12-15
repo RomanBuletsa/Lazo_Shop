@@ -1,4 +1,5 @@
 ﻿using System;
+using UnityEngine;
 
 namespace Data
 {
@@ -11,6 +12,7 @@ namespace Data
         public int price;
         public int costs;
         public int profit;
+        public GameObject model;
 
         public ProductData(string identification, string name, int amount, int price, int costs)
         {
