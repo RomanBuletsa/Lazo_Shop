@@ -20,5 +20,7 @@ namespace Data
             this.price = price;
             this.costs = costs;
         }
+
+        public int Profit => price - costs;
     }
 }
