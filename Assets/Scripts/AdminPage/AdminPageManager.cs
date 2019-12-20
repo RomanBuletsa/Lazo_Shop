@@ -5,6 +5,7 @@ using Data;
 using SceneManagement;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 namespace AdminPage
@@ -19,6 +20,7 @@ namespace AdminPage
         [SerializeField] private Button searchButton;
         [SerializeField] private Button addProductsButton;
         [SerializeField] private Button sellProductsButton;
+        [SerializeField] private Button backButton;
 
         private Dictionary<ProductData, ProductView> productViews;
 
@@ -31,6 +33,7 @@ namespace AdminPage
         {
             productViews = new Dictionary<ProductData, ProductView>();
             searchButton.onClick.AddListener(Search);
+            backButton.onClick.AddListener(()=> SceneManager.LoadScene(ApplicationScenes.MainMenu.ToString()));
             addProductsButton.onClick.AddListener(addProductView.Show);
             sellProductsButton.onClick.AddListener(sellProductView.Show);
             ViewProducts();

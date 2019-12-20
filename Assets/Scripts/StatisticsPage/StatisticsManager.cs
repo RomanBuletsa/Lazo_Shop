@@ -3,6 +3,8 @@ using System.Linq;
 using Application;
 using Data;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 namespace StatisticsPage
 {
@@ -11,9 +13,11 @@ namespace StatisticsPage
     
         [SerializeField] private StatisticsProductView statisticsProductViewPrefab; 
         [SerializeField] private Transform sceneParent;
+        [SerializeField] private Button backButton;
         private Dictionary<ProductData, StatisticsProductView> statisticsProductViews;
         void Start()
         {
+            backButton.onClick.AddListener(() => SceneManager.LoadScene(ApplicationScenes.MainMenu.ToString()));
             ShowAllProducts();
         }
 
