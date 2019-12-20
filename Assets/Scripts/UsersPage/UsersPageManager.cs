@@ -6,6 +6,7 @@ using Application;
 using Data;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using UsersPage;
 
@@ -16,11 +17,13 @@ public class UsersPageManager : MonoBehaviour
     [SerializeField] private UserView userViewsPrefab; 
     [SerializeField] private Transform sceneParent;
     [SerializeField] private UserPageView userPageView;
+    [SerializeField] private Button backButton;
     private Dictionary<UserData, UserView> userViews;
 
 
     private void Start()
     {
+        backButton.onClick.AddListener(()=>SceneManager.LoadScene(ApplicationScenes.MainMenu.ToString()));
         searchButton.onClick.RemoveAllListeners();
         searchButton.onClick.AddListener(OnSearchUpBtnClicked);
         ShowUsers();
