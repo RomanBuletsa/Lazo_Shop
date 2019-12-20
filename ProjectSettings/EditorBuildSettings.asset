@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Exhibition.unity
     guid: 2e79c88a133ad6542b2e60389b934e73
+  - enabled: 1
+    path: Assets/Scenes/StatisticsPage.unity
+    guid: 4ed08e0b20daa3948a2e739b1fe171d8
   m_configObjects: {}

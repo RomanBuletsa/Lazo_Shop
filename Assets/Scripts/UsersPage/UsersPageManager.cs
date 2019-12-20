@@ -23,10 +23,16 @@ public class UsersPageManager : MonoBehaviour
 
     private void Start()
     {
-        backButton.onClick.AddListener(()=>SceneManager.LoadScene(ApplicationScenes.MainMenu.ToString()));
+        backButton.onClick.AddListener(UnloadScene);
         searchButton.onClick.RemoveAllListeners();
         searchButton.onClick.AddListener(OnSearchUpBtnClicked);
         ShowUsers();
+    }
+    
+    private void UnloadScene()
+    {
+        SceneManager.LoadScene(ApplicationScenes.MainMenu.ToString());
+        SceneManager.UnloadScene(ApplicationScenes.UsersPage.ToString());
     }
 
     private void OnSearchUpBtnClicked()

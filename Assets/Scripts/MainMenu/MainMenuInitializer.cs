@@ -13,11 +13,29 @@ namespace MainMenu
         [SerializeField] private Button statisticsPageBtn;
         protected override void Init()
         {
-            adminPageBtn.onClick.AddListener(() => ScenesLoader.LoadScene(ApplicationScenes.AdminPage.ToString(), true, false));
-            userPageBtn.onClick.AddListener(()=> ScenesLoader.LoadScene(ApplicationScenes.UsersPage.ToString(), true, false));
-            statisticsPageBtn.onClick.AddListener(()=> ScenesLoader.LoadScene(ApplicationScenes.StatisticsPage.ToString(), true, false));
+            adminPageBtn.onClick.AddListener(LoadAdminPage);
+            userPageBtn.onClick.AddListener(LoadUsersPage);
+            statisticsPageBtn.onClick.AddListener(LoadStatisticsPage);
             var manager = new MainMenuManager();
             ApplicationManager.Instance.RegisterMainMenuManager(manager);
+        }
+
+        private void LoadAdminPage()
+        {
+            ScenesLoader.LoadScene(ApplicationScenes.AdminPage.ToString());
+            ScenesLoader.UnloadScene(ApplicationScenes.MainMenu.ToString());
+        }
+        
+        private void LoadUsersPage()
+        {
+            ScenesLoader.LoadScene(ApplicationScenes.UsersPage.ToString());
+            ScenesLoader.UnloadScene(ApplicationScenes.MainMenu.ToString());
+        }
+        
+        private void LoadStatisticsPage()
+        {
+            ScenesLoader.LoadScene(ApplicationScenes.StatisticsPage.ToString());
+           // ScenesLoader.UnloadScene(ApplicationScenes.MainMenu.ToString());
         }
 
         protected override void PostInit() => ApplicationManager.Instance.MainMenuManager.Start();

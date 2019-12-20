@@ -17,8 +17,14 @@ namespace StatisticsPage
         private Dictionary<ProductData, StatisticsProductView> statisticsProductViews;
         void Start()
         {
-            backButton.onClick.AddListener(() => SceneManager.LoadScene(ApplicationScenes.MainMenu.ToString()));
+            backButton.onClick.AddListener(UnloadScene);
             ShowAllProducts();
+        }
+        
+        private void UnloadScene()
+        {
+            SceneManager.LoadScene(ApplicationScenes.MainMenu.ToString());
+            SceneManager.UnloadScene(ApplicationScenes.StatisticsPage.ToString());
         }
 
         private void ShowAllProducts()

@@ -33,10 +33,16 @@ namespace AdminPage
         {
             productViews = new Dictionary<ProductData, ProductView>();
             searchButton.onClick.AddListener(Search);
-            backButton.onClick.AddListener(()=> SceneManager.LoadScene(ApplicationScenes.MainMenu.ToString()));
+            backButton.onClick.AddListener(UnloadScene);
             addProductsButton.onClick.AddListener(addProductView.Show);
             sellProductsButton.onClick.AddListener(sellProductView.Show);
             ViewProducts();
+        }
+
+        private void UnloadScene()
+        {
+            SceneManager.LoadScene(ApplicationScenes.MainMenu.ToString());
+            SceneManager.UnloadScene(ApplicationScenes.AdminPage.ToString());
         }
         
         private void ViewProducts()
